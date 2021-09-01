@@ -9,6 +9,7 @@ import argparse
 import shutil
 import os
 import subprocess
+import sys
 
 from pathlib import Path
 from contextlib import contextmanager
@@ -102,9 +103,10 @@ def main():
         logging.error(
             (
                 "The required packer and unpacker are not found in your path. "
-                "installation instrcutions from https://github.com/Ryex/Dungeondraft-GoPackager"
+                "installation instructions from https://github.com/Ryex/Dungeondraft-GoPackager"
             )
         )
+        sys.exit(1)
 
     args = parse_args()
     with working_directory(args.assets_dir):
