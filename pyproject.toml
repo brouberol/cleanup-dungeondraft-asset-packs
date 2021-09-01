@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cleanup-dungeondraft-asset-packs"
-version = "0.1.0"
+version = "0.1.1"
 description = "CLI tool to clean up Dungeondraft asset packs"
 authors = ["Balthazar Rouberol <br@imap.cc>"]
 license = "MIT"
